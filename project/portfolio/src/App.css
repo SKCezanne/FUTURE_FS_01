@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #020617, #0f172a);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 30px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skills span {
+  background: #020617;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+/* Navbar links */
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* Button hover */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* Skill hover */
+.skills span {
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.skills span:hover {
+  transform: translateY(-4px);
+  background: #020617;
+}
+
+/* Project card hover */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.skill-info {
+  margin-top: 30px;
+  padding: 20px;
+  background: #020617;
+  border-left: 4px solid #38bdf8;
+  border-radius: 6px;
+}
+.skill-btn {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  color: #e5e7eb;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.3s ease,
+    border 0.3s ease;
+}
+.skill-btn:hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+  border-color: transparent;
+}
+.skill-btn:active {
+  transform: scale(0.95);
+}
+.active-skill {
+  background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  color: #020617;
+  box-shadow: 0 12px 30px rgba(34, 211, 238, 0.4);
+  border-color: transparent;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  background: linear-gradient(180deg, #020617, #020617);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border 0.25s ease;
+}
+
+/* Hover lift */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* Open-in-new-tab icon */
+.project-link {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #38bdf8;
+  opacity: 0.7;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* Card text */
+.project-card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cbd5f5;
+  line-height: 1.5;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #020617;
+  padding: 16px 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.contact-link {
+  font-size: 1.2rem;
+  color: #38bdf8;
+  text-decoration: none;
+  opacity: 0.7;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-link:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.clickable {
+  cursor: pointer;
+}
+.navbar li {
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar li:hover {
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
